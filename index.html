@@ -165,7 +165,6 @@
 
     .footer{ margin-top: 18px; color: var(--muted2); font-size: 12.5px; line-height: 1.6; text-align:center; }
 
-    /* ---------------- PRINT (One-page executive CV) ---------------- */
     @page { size: A4; margin: 10mm; }
     .printOnly{ display:none; }
     @media print{
@@ -216,7 +215,6 @@
       .skills{ gap:6px !important; margin-top: 6px !important; }
       .skill{ font-size: 10px !important; padding: 4px 7px !important; border:1px solid #e6e6e6 !important; background:#f7f7f7 !important; color:#111 !important; }
       a{ color:#111 !important; text-decoration:none !important; }
-      /* Ensure it stays single page */
       .card, .section, .role, .proj { break-inside: avoid; page-break-inside: avoid; }
       .printOnly{ display:block !important; margin: 0 0 8px !important; }
       .printHeader{
@@ -248,7 +246,6 @@
       </div>
     </div>
 
-    <!-- PRINT-ONLY HEADER (shows above everything when printing to PDF) -->
     <div class="printOnly printHeader">
       <p class="name">Powell Andile Ndlovu</p>
       <div class="line">
@@ -260,13 +257,15 @@
     </div>
 
     <div class="grid">
-      <!-- LEFT COLUMN -->
       <div class="card">
         <div class="hero">
           <h1>Powell Andile Ndlovu</h1>
           <p class="subtitle">
-            Environmental Planning &amp; Management Officer with strong GIS, Remote Sensing and Data Science capabilities.
-            I turn environmental and socioeconomic data into decision-ready insights, maps, dashboards, and clear policy recommendations.
+            Environmental Planning and Management professional with strong expertise in GIS, Remote Sensing, and Data Science.
+            I specialise in transforming environmental and socioeconomic data into decision-ready insights through spatial analysis,
+            remote sensing workflows, statistical modelling, and interactive dashboards. My work focuses on supporting planning,
+            monitoring, compliance, and sustainable development through clear evidence, strong technical execution, and communication
+            that serves both technical and policy audiences.
           </p>
 
           <div class="chips" aria-label="key tags">
@@ -297,7 +296,7 @@
               <div class="value">
                 <a href="https://kabila96.github.io/powellndlovuportfolio/" target="_blank" rel="noopener">Website Portfolio</a>
                 <span style="color: rgba(255,255,255,.45)"> • </span>
-                <a href="https://sales-data-analysis-portfolio-g9z5x7ikmxe5binu7s8bnf.streamlit.app/" target="_blank" rel="noopener">Sales (Streamlit)</a>
+                <a href="https://ee-powellndlovu.projects.earthengine.app/view/kazuma-forest-multi-index-monitoring-app" target="_blank" rel="noopener">Kazuma App</a>
               </div>
             </div>
           </div>
@@ -307,8 +306,8 @@
           <div class="h2">Professional Summary <span>impact-focused</span></div>
           <p class="p">
             I work at the intersection of environmental management, geospatial analysis, and data science—supporting planning,
-            compliance, monitoring, and sustainable development. My strengths include spatial analytics, statistical modelling,
-            dashboarding, and communicating results to both technical and non-technical stakeholders.
+            compliance, monitoring, and sustainable development. My strengths include spatial analytics, remote sensing,
+            statistical modelling, dashboarding, and communicating results clearly to both technical and non-technical stakeholders.
           </p>
         </div>
 
@@ -396,12 +395,17 @@
           <div class="h2">Portfolio Projects <span>live demos</span></div>
 
           <div class="projects" role="list">
-         <div class="proj" role="listitem">
-           <h3>Kazuma Forest Multi-Index Monitoring App</h3>
-           <p>Interactive Google Earth Engine application for analyzing vegetation greenness, moisture conditions, and fire-related disturbance proxies using NDVI, NDMI, and NBR from 2016 to 2025.</p>
-          <a href="https://ee-powellndlovu.projects.earthengine.app/view/kazuma-forest-multi-index-monitoring-app" target="_blank" rel="noopener">Open app →</a>
-        </div>
-        </div>
+            <div class="proj" role="listitem">
+              <h3>Kazuma Forest Multi-Index Monitoring App</h3>
+              <p>Interactive Google Earth Engine application for analyzing vegetation greenness, moisture conditions, and fire-related disturbance proxies using NDVI, NDMI, and NBR from 2016 to 2025.</p>
+              <a href="https://ee-powellndlovu.projects.earthengine.app/view/kazuma-forest-multi-index-monitoring-app" target="_blank" rel="noopener">Open app →</a>
+            </div>
+
+            <div class="proj" role="listitem">
+              <h3>Retail Sales Analysis</h3>
+              <p>Executive sales insights dashboard with interactive business analytics and visual reporting.</p>
+              <a href="https://sales-data-analysis-portfolio-g9z5x7ikmxe5bbinu7s8bnf.streamlit.app/" target="_blank" rel="noopener">Open app →</a>
+            </div>
 
             <div class="proj" role="listitem">
               <h3>Lily Ponds Water Chemistry</h3>
@@ -424,7 +428,6 @@
         </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
       <div class="card">
         <div class="section">
           <div class="h2">Core Skills <span>what I deliver</span></div>
